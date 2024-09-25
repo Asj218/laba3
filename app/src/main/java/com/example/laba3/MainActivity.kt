@@ -26,5 +26,14 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    private fun countLetters(text: String): Int {
+        var count = 0
+        for (char in text) {
+            if (char.isLetter() && char.isLetter()) { // Проверяем, является ли символ латинской буквой
+                count++
+            }
+        }
+        return count
+    }
 
 }
