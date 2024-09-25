@@ -23,7 +23,11 @@ class MainActivity : AppCompatActivity() {
         val calculateButton = findViewById<Button>(R.id.button)
         val countTextView = findViewById<TextView>(R.id.label1)
 
-
+        calculateButton.setOnClickListener {
+            val inputText = mainTextEditText.text.toString()
+            val letterCount = countLetters(inputText)
+            countTextView.text = "Количество букв: $letterCount"
+        }
 
     }
     private fun countLetters(text: String): Int {
