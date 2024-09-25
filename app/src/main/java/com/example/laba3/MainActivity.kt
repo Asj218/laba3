@@ -1,6 +1,9 @@
 package com.example.laba3
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +19,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val mainTextEditText = findViewById<EditText>(R.id.main_Text)
+        val calculateButton = findViewById<Button>(R.id.button)
+        val countTextView = findViewById<TextView>(R.id.label1)
+
+
+
     }
+
 }
